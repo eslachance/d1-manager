@@ -18,9 +18,11 @@ D1 Manager is a web UI and API for Cloudflare D1, a serverless SQL database. It 
 ## Setup
 
 1. Fork this repo
-2. Setup a **Cloudflare Pages** with the forked repo
-3. Use **Cloudflare Access** to protect the your site
-4. **Bind databases** to `DB_*` environment variables
+2. In your **Cloudflare Dashboard**, click *Workers and Pages*, *Create Application*, *Pages* tab, *Connect to Git*.
+3. Select your forked repo, to create the Pages instance. Leave defaults for all options.
+4. After deployment, go back to **Workers and Pages** and click your new application, then click *Settings*.
+5. (Optional but highly recommended): Use **Cloudflare Access** to protect your site.
+6. Click **Functions**, scroll to *D1 database bindings* and create the `DB_*` bindings ( see below: )
 
 ![bind-d1](./images/bind-d1.png)
 
